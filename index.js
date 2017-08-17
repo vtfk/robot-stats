@@ -2,22 +2,15 @@
 
 const config = require('./config')
 const logger = require('./lib/logger')
-const getDirectories = require('./lib/get-directories')
-const countFiles = require('./lib/count-files')
+const walkDirectories = require('./lib/walk-directories')
 const postStats = require('./lib/post-stats')
 
 logger('info', ['index', config.SYSTEM_NAME, 'start'])
 
 function getStats () {
   return new Promise(async (resolve, reject) => {
-    const directories = await getDirectories(config.DIRECTORIES_PATH)
-    const jobs = directories.map(directory => countFiles(directory))
-    const results = await Promise.all(jobs)
-    const data = results.reduce((a, b) => {
-      a[b.id] = b.count
-      return a
-    }, {})
-    resolve(data)
+    const stats = await walkDirectories(config.DIRECTORIES_PATH)
+    resolve(stats)
   })
 }
 

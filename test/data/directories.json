@@ -1,0 +1,35 @@
+{
+  "copies": {
+    "count": 1
+  },
+  "done": {
+    "count": 0
+  },
+  "errors": {
+    "count": 0
+  },
+  "queue": {
+    "count": 1
+  },
+  "retries": {
+    "count": 0
+  },
+  "subs": {
+    "count": 0,
+    "anothersub": {
+      "count": 0
+    },
+    "sub": {
+      "count": 0,
+      "anotherbottom": {
+        "count": 0
+      },
+      "bottom": {
+        "count": 0
+      },
+      "finalbottom": {
+        "count": 0
+      }
+    }
+  }
+}
