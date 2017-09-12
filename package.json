@@ -46,7 +46,7 @@
   "dependencies": {
     "axios": "0.16.2",
     "is-directory": "0.3.1",
-    "jsonwebtoken": "8.0.0",
+    "jsonwebtoken": "8.0.1",
     "winston": "2.3.1",
     "winston-papertrail": "1.0.5"
   }
