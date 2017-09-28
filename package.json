@@ -1,7 +1,7 @@
 {
   "name": "robot-stats",
   "description": "Robot for collecting stats",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=8.4.0"
+    "node": ">=8.6.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -38,9 +38,9 @@
   "homepage": "https://github.com/telemark/robot-stats",
   "devDependencies": {
     "ava": "0.22.0",
-    "coveralls": "2.13.1",
+    "coveralls": "2.13.2",
     "nsp": "2.8.1",
-    "nyc": "11.1.0",
+    "nyc": "11.2.1",
     "standard": "10.0.3"
   },
   "dependencies": {
