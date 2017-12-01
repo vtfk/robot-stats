@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=8.9.1"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/telemark/robot-stats/issues"
   },
-  "homepage": "https://github.com/telemark/robot-stats",
+  "homepage": "https://github.com/telemark/robot-stats#readme",
   "devDependencies": {
     "ava": "0.24.0",
     "coveralls": "3.0.0",
