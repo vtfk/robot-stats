@@ -47,7 +47,7 @@
     "axios": "0.18.0",
     "is-directory": "0.3.1",
     "jsonwebtoken": "8.2.0",
-    "winston": "2.4.0",
+    "winston": "2.4.1",
     "winston-papertrail": "1.0.5"
   }
 }
