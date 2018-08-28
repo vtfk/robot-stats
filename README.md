@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/robot-stats.svg?branch=master)](https://travis-ci.org/telemark/robot-stats)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/robot-stats.svg)](https://greenkeeper.io/)
 
 # robot-stats
 
@@ -42,5 +41,3 @@ This will start a container. Do the job. Stop the container and remove it.
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of robot-stats](https://robots.kebabstudios.party/robot-stats.png "Robohash image of robot-stats")
