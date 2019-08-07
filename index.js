@@ -7,11 +7,9 @@ const postStats = require('./lib/post-stats')
 
 logger('info', ['index', config.SYSTEM_NAME, 'start'])
 
-function getStats () {
-  return new Promise(async (resolve, reject) => {
-    const stats = await walkDirectories(config.DIRECTORIES_PATH)
-    resolve(stats)
-  })
+async function getStats () {
+  const stats = await walkDirectories(config.DIRECTORIES_PATH)
+  return stats
 }
 
 getStats()
