@@ -1,11 +1,15 @@
 'use strict'
 
 const config = require('./config')
-const logger = require('./lib/logger')
+const { logger, logConfig } = require('@vtfk/logger')
 const walkDirectories = require('./lib/walk-directories')
 const postStats = require('./lib/post-stats')
 
-logger('info', ['index', config.SYSTEM_NAME, 'start'])
+logConfig({
+  prefix: config.SYSTEM_NAME
+})
+
+logger('info', ['index', 'start'])
 
 async function getStats () {
   const stats = await walkDirectories(config.DIRECTORIES_PATH)
@@ -15,10 +19,10 @@ async function getStats () {
 getStats()
   .then(postStats)
   .then(result => {
-    logger('info', [config.SYSTEM_NAME, result._id, 'finished'])
-    process.exit(0)
+    logger('info', ['index', result._id, 'finished'])
+    process.exitCode = 0
   })
   .catch(error => {
-    logger('error', [config.SYSTEM_NAME, error])
-    process.exit(1)
+    logger('error', ['index', error])
+    process.exitCode = 1
   })
