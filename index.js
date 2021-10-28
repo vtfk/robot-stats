@@ -20,9 +20,9 @@ getStats()
   .then(postStats)
   .then(result => {
     logger('info', ['index', result._id, 'finished'])
-    process.exitCode = 0
+    process.exit(0)
   })
   .catch(error => {
     logger('error', ['index', error])
-    process.exitCode = 1
+    process.exit(1)
   })
