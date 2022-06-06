@@ -31,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/robot-stats"
+    "url": "https://github.com/vtfk/robot-stats"
   },
   "bugs": {
-    "url": "https://github.com/telemark/robot-stats/issues"
+    "url": "https://github.com/vtfk/robot-stats/issues"
   },
-  "homepage": "https://github.com/telemark/robot-stats#readme",
+  "homepage": "https://github.com/vtfk/robot-stats#readme",
   "devDependencies": {
     "ava": "4.2.0",
     "coveralls": "3.1.1",
