@@ -9,6 +9,13 @@
     "email": "geir.gasodden@pythonia.no",
     "url": "https://github.com/zrrrzzt"
   },
+  "contributors": [
+    {
+      "name": "Rune Moskvil Lyngås",
+      "email": "rune.moskvil.lyngaas@vtfk.no",
+      "url": "https://github.com/runely"
+    }
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=10.16.1"
